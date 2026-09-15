@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PreMigrate</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="PreMigrate.script.ps1" />
+    <EmbeddedResource Include="PreMigrate.script.ps1" LogicalName="PreMigrate.script.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management.Automation" />
+    <Reference Include="Microsoft.PowerShell.ConsoleHost" />
+  </ItemGroup>
+</Project>

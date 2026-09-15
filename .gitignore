@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.dll
+*.zip
+
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Temporary files
+temp/
+tmp/
+
+# Semgrep output
+results/*.json
+results/*.sarif
+results/*.txt
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+Desktop.ini
